@@ -1,0 +1,93 @@
+/* ปรับแต่งรูปภาพโปรไฟล์ให้เป็นวงกลม */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #800000; /* ใช้สีแดงเลือดหมู */
+}
+
+/* ส่วนหัวของหน้า */
+header {
+    background-color: #800000; /* ใช้สีแดงเลือดหมู */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* สไตล์สำหรับหัวข้อ Section */
+h2 {
+    color: #800000; /* ใช้สีแดงเลือดหมู */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* การจัดการเส้นแบ่ง (Horizontal Rule) */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* ปรับความห่างของแต่ละรายการใน unordered list */
+ul {
+    padding-left: 20px;
+}
+
+/* การตั้งค่าของ Navbar */
+.navbar {
+    background-color: #800000; /* ใช้สีแดงเลือดหมู */
+    margin-bottom: 40px;
+}
+
+.navbar-nav a {
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* การปรับขนาดของ Section */
+section {
+    margin-top: 40px;
+    padding: 30px 0;
+}
+
+/* สไตล์สำหรับ list ของการติดต่อ */
+ol {
+    padding-left: 20px;
+}
+
+/* ปรับการจัดวางเนื้อหาภายใน container */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* การตั้งค่าสำหรับ mobile และ responsive */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    ol, ul {
+        padding-left: 15px;
+    }
+}
